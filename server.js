@@ -19,6 +19,6 @@ app.use(morgan("common"));
 app.use("/api/v1/contacts", contacts);
 app.use("/api/v1/users", users);
 
-const PORT = process.env.PORT || 5300;
+const PORT = process.env.PORT;
 
 app.listen(PORT, console.log("API SERVER"));
